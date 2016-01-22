@@ -3,6 +3,10 @@ package edu.luc.etl.scala.wavefront
 object Main {
 
   def main(args: Array[String]) = {
+    if (args.length < 1) {
+      Console.err.println("usage: Main n")
+      System.exit(1)
+    }
     val n = args(0).toInt
     val w = wavefront(n)
     for (i <- 0 until n) {

@@ -25,8 +25,7 @@ object Main {
       else if (j == 0)
         i
       else
-        a(i)(j - 1) + a(i - 1)(j - 1) + a(i - 1)(j)
-    )
+        a(i)(j - 1) + a(i - 1)(j - 1) + a(i - 1)(j))
     a
   }
 }

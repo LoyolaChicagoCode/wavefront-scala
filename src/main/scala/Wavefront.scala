@@ -14,12 +14,12 @@ object Main {
         print(w(i)(j))
         print(" ")
       }
-      println
+      println()
     }
   }
 
   def wavefront(n: Int) = {
-    lazy val a: Stream[Stream[Int]] = Stream.tabulate(n, n)((i, j) =>
+    lazy val a: LazyList[LazyList[Int]] = LazyList.tabulate(n, n)((i, j) =>
       if (i == 0)
         j
       else if (j == 0)

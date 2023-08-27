@@ -8,6 +8,6 @@ scalacOptions ++= Seq("-deprecation", "-feature", "-unchecked", "-Yexplicit-null
 
 libraryDependencies ++= Seq(
   "com.novocode"   %  "junit-interface" % "0.11"   % Test,
-  "org.scalatest"  %% "scalatest"       % "3.2.14"  % Test,
+  "org.scalatest"  %% "scalatest"       % "3.2.16"  % Test,
   "org.scalacheck" %% "scalacheck"      % "1.17.0" % Test
 )
